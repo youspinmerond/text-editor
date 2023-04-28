@@ -1,0 +1,66 @@
+$background:#151515
+$text: #f11
+$light: #da605d
+$dark: #111
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+a
+  color: $text
+  text-decoration: none
+
+.link
+  color: $light
+  font-weight: 600
+
+body
+  background: $background
+  color: $text
+  font-family: "Roboto", sans-serif
+
+article
+  display: flex
+  justify-content: center
+  align-items: center
+  height: calc(100vh - 36px)
+
+  .square
+    h1
+      font-size: 4rem
+    p
+      font-size: 1.5rem
+    a
+      font-size: 2rem
+
+.article
+  padding: 2rem
+
+header
+  background: $dark
+  padding: 0 1rem
+  user-select: none
+
+header > nav
+  padding: .5rem 0
+  display: flex
+  justify-content: space-between
+
+  .start
+    &>*
+      padding: .5rem 1rem
+      height: 100%
+      outline: none
+
+      &:hover, &:focus
+        background: $background
+        border-bottom: 2px solid $text
+
+button
+  background: $dark
+  border: none
+  border-radius: 4px
+  padding: .5rem
+  color: $text
